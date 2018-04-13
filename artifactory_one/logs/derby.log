@@ -1,0 +1,57 @@
+----------------------------------------------------------------
+Fri Apr 13 06:24:24 UTC 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0162-bdad-2887-00001047f408 
+on database directory /var/opt/jfrog/artifactory/data/derby with class loader java.net.URLClassLoader@85ede7b 
+Loaded from file:/opt/jfrog/artifactory/tomcat/lib/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_161-b14
+user.dir=/
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-693.11.6.el7.x86_64
+derby.system.home=null
+derby.stream.error.file=/var/opt/jfrog/artifactory/logs/derby.log
+Database Class Loader started - derby.database.classpath=''
+Fri Apr 13 06:24:30 UTC 2018 Thread[localhost-startStop-2,5,main] (XID = 412), (SESSIONID = 5), (DATABASE = /var/opt/jfrog/artifactory/data/derby), (DRDAID = null), Cleanup action starting
+Fri Apr 13 06:24:30 UTC 2018 Thread[localhost-startStop-2,5,main] (XID = 412), (SESSIONID = 5), (DATABASE = /var/opt/jfrog/artifactory/data/derby), (DRDAID = null), Failed Statement is: SELECT * FROM db_properties
+ERROR 42X05: Table/View 'DB_PROPERTIES' does not exist.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindTableDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromBaseTable.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.FromList.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.SelectNode.bindNonVTITables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bindTables(Unknown Source)
+	at org.apache.derby.impl.sql.compile.DMLStatementNode.bind(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CursorNode.bindStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement42.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver42.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareStatement(Unknown Source)
+	at org.jfrog.config.db.TemporaryDBChannel.executeSelect(TemporaryDBChannel.java:43)
+	at org.artifactory.common.config.db.DbVersionDataAccessObject.isDbPropertiesTableExists(DbVersionDataAccessObject.java:39)
+	at org.artifactory.converter.VersionProviderImpl.tryToResolveFromDbUsingTempChannel(VersionProviderImpl.java:204)
+	at org.artifactory.converter.VersionProviderImpl.getVersionInfoFromDbIfExists(VersionProviderImpl.java:160)
+	at org.artifactory.converter.VersionProviderImpl.loadOriginalDbVersion(VersionProviderImpl.java:112)
+	at org.artifactory.converter.VersionProviderImpl.init(VersionProviderImpl.java:101)
+	at org.artifactory.webapp.servlet.BasicConfigManagers.initHomes(BasicConfigManagers.java:97)
+	at org.artifactory.webapp.servlet.BasicConfigManagers.initialize(BasicConfigManagers.java:81)
+	at org.artifactory.webapp.servlet.ArtifactoryHomeConfigListener.contextInitialized(ArtifactoryHomeConfigListener.java:53)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Cleanup action completed

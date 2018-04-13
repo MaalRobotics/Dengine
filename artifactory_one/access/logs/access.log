@@ -1,0 +1,39 @@
+2018-04-13 06:24:16,286 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/var/opt/jfrog/artifactory/access'
+2018-04-13 06:24:16,323 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v3.3.2 on ip-172-31-26-88.us-west-2.compute.internal with PID 1862 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-3.3.2.jar started by artifactory in /)
+2018-04-13 06:24:16,323 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2018-04-13 06:24:25,993 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:129) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2018-04-13 06:24:25,994 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:132) - Connection URL: jdbc:derby:/var/opt/jfrog/artifactory/data/derby
+2018-04-13 06:24:26,397 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:141) - ***Creating database schema***
+2018-04-13 06:24:27,548 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:157) - Setting new schema baseline to latest version: 3.5
+2018-04-13 06:24:28,725 [localhost-startStop-1] [INFO ] (o.j.a.c.InternalConfigurationServiceBase:100) - Configuration data wasn't found in db. Loading defaults
+2018-04-13 06:24:29,558 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:56) - No master.key was supplied (system prop or file), attempting to generate new master.key
+2018-04-13 06:24:29,750 [localhost-startStop-1] [INFO ] (o.j.a.m.ConfigMigrationRunner:73) - Current version of access.properties is 1, latest version is 2. Applying migrations.
+2018-04-13 06:24:29,750 [localhost-startStop-1] [INFO ] (o.j.a.m.ConfigMigrationRunner:73) - Migrating access.properties to version 2
+2018-04-13 06:24:29,752 [localhost-startStop-1] [INFO ] (o.j.a.s.s.AccessStartupUtil:41) - [ACCESS BOOTSTRAP] Server name not found in access properties. Setting value to e0b7c04f-1c8c-4991-9cd1-80167279ef46
+2018-04-13 06:24:31,009 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:100) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2018-04-13 06:24:31,087 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:86) - Added service: sync
+2018-04-13 06:24:31,696 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:92) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2018-04-13 06:24:31,700 [localhost-startStop-1] [INFO ] (o.j.a.s.s.CertificateServiceImpl:386) - [ACCESS BOOTSTRAP] Generating private key and root certificate
+2018-04-13 06:24:34,375 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:71) - [Certificate Migration] Recreating root certificate to match current certificate version
+2018-04-13 06:24:34,379 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:95) - [Certificate Migration] Creating root certificate for version: null
+2018-04-13 06:24:35,050 [localhost-startStop-1] [INFO ] (o.j.a.s.m.CertificateMigrationImpl:82) - [Certificate Migration] Saved new root certificate in: /var/opt/jfrog/artifactory/access/etc/keys/root.crt
+2018-04-13 06:24:36,869 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:145) - [ACCESS BOOTSTRAP] Updating server 'e0b7c04f-1c8c-4991-9cd1-80167279ef46' private key finger print to: 426b9c9c968d3a752d8347f184859f9a85e87844507991aabff7635c1f42cd2a
+2018-04-13 06:24:37,036 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:273) - [ACCESS BOOTSTRAP] No admin user exists - generating an admin user, credentials will be saved to: /var/opt/jfrog/artifactory/access/etc/generated.creds
+2018-04-13 06:24:37,551 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:311) - [ACCESS BOOTSTRAP] Writing updated credentials to the bundling Artifactory: /var/opt/jfrog/artifactory/etc/security/access/bootstrap.creds
+2018-04-13 06:24:37,557 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:244) - [ACCESS BOOTSTRAP] Creating default access admin permission 'jfac@01caytt97y2y4q0dyyg7md0qsn-admin'
+2018-04-13 06:24:37,661 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:266) - [ACCESS BOOTSTRAP] Assigning user 'access-admin' to admin permission 'jfac@01caytt97y2y4q0dyyg7md0qsn-admin'.
+2018-04-13 06:24:37,770 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:107) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2018-04-13 06:24:41,912 [localhost-startStop-1] [INFO ] (o.j.a.s.s.s.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2018-04-13 06:24:47,827 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 33.926 seconds (JVM running for 37.86)
+2018-04-13 06:25:02,398 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting groups...
+2018-04-13 06:25:02,474 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_events...
+2018-04-13 06:25:02,484 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting tokens...
+2018-04-13 06:25:02,508 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting federation_servers...
+2018-04-13 06:25:02,557 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting permissions...
+2018-04-13 06:25:02,570 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting servers...
+2018-04-13 06:25:02,574 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting users...
+2018-04-13 06:25:02,631 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting config...
+2018-04-13 06:25:02,637 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting encryption...
+2018-04-13 06:25:02,638 [http-nio-8040-exec-9] [INFO ] (o.j.a.s.s.b.AccessImporterExporterImpl:63) - Exporting home...
+2018-04-13 06:25:03,427 [http-nio-8040-exec-10] [ERROR] (o.j.a.s.a.s.p.SecurityPermissionEventLogProvider:94) - Could not audit custom data for add customData
+2018-04-13 06:25:03,486 [http-nio-8040-exec-2] [ERROR] (o.j.a.s.a.s.p.SecurityPermissionEventLogProvider:94) - Could not audit custom data for add customData

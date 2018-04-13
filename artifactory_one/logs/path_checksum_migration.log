@@ -1,0 +1,1 @@
+2018-04-13 06:25:32,014 [art-exec-2] [INFO ] (o.a.s.j.m.p.RepoPathChecksumMigrationJob:284) - artifactory.RepoPathChecksumMigrationJob#1abae420-6b6a-4a16-a1cf-407780bda6e7: all nodes reached minimal version '5.5.0-m001', continuing execution

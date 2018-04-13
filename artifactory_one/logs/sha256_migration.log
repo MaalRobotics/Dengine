@@ -1,0 +1,1 @@
+2018-04-13 06:25:32,015 [art-exec-2] [INFO ] (o.a.s.j.m.s.Sha256MigrationJob:284) - artifactory.Sha256MigrationJob#9a1e7a96-f7a8-4106-a6d1-10b134b9479d: all nodes reached minimal version '5.5.0-m001', continuing execution

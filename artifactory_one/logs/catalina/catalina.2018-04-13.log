@@ -1,0 +1,166 @@
+13-Apr-2018 06:24:10.993 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+13-Apr-2018 06:24:11.083 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Apr-2018 06:24:11.097 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8040"]
+13-Apr-2018 06:24:11.098 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Apr-2018 06:24:11.111 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8019"]
+13-Apr-2018 06:24:11.113 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Apr-2018 06:24:11.133 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Apr-2018 06:24:11.134 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+13-Apr-2018 06:24:11.201 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+13-Apr-2018 06:24:11.222 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+13-Apr-2018 06:24:32.272 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [21,038] ms
+13-Apr-2018 06:24:47.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [36,701] ms
+13-Apr-2018 06:24:47.904 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/tomcat/webapps/ROOT]
+13-Apr-2018 06:24:47.979 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/tomcat/webapps/ROOT] has finished in [75] ms
+13-Apr-2018 06:24:47.998 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+13-Apr-2018 06:24:48.154 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8040"]
+13-Apr-2018 06:24:48.310 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8019"]
+13-Apr-2018 06:48:49.076 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/artifactory]
+13-Apr-2018 06:48:50.145 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/access]
+13-Apr-2018 06:48:50.790 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.790 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.791 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.791 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.791 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.791 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.791 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.792 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.792 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.792 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks The web application [access] created a ThreadLocal with key of type [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1] (value [org.jfrog.access.server.service.auth.AuthenticationServiceImpl$1@8231d1e]) and a value of type [org.jfrog.access.server.service.auth.model.AnonymousPrincipal] (value [anonymous]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+13-Apr-2018 06:48:50.807 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+13-Apr-2018 06:48:50.824 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/access]
+ java.io.FileNotFoundException: /var/opt/jfrog/artifactory/webapps/access.war (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:615)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:748)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:395)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:149)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Apr-2018 06:48:50.825 WARNING [localhost-startStop-4] org.apache.catalina.core.StandardContext.postWorkDirectory Failed to create work directory [/opt/jfrog/artifactory/tomcat/work/Catalina/localhost/access] for context [/access]
+13-Apr-2018 06:48:50.826 SEVERE [localhost-startStop-4] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/access]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@344e94d1]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4995)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/var/opt/jfrog/artifactory/webapps/access.war] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:706)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+13-Apr-2018 06:48:50.826 SEVERE [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/access]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Apr-2018 06:48:50.827 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [20] ms
+13-Apr-2018 06:48:50.841 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+13-Apr-2018 06:48:50.851 SEVERE [localhost-startStop-5] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/artifactory]
+ java.io.FileNotFoundException: /var/opt/jfrog/artifactory/webapps/artifactory.war (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:615)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:748)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:395)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:149)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Apr-2018 06:48:50.852 WARNING [localhost-startStop-5] org.apache.catalina.core.StandardContext.postWorkDirectory Failed to create work directory [/opt/jfrog/artifactory/tomcat/work/Catalina/localhost/artifactory] for context [/artifactory]
+13-Apr-2018 06:48:50.852 SEVERE [localhost-startStop-5] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/artifactory]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3fd9f6b8]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4995)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/var/opt/jfrog/artifactory/webapps/artifactory.war] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:749)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:706)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+13-Apr-2018 06:48:50.852 SEVERE [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/artifactory]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Apr-2018 06:48:50.853 INFO [localhost-startStop-5] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [12] ms
+13-Apr-2018 06:51:31.362 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+13-Apr-2018 06:51:31.865 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/artifactory]
+13-Apr-2018 06:51:32.366 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/access]
